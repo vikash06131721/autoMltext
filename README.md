@@ -23,7 +23,9 @@ We also calculate tfidf based features.
 The option is there to select either of them("statistical", "tfidf") or concatenate all the features("all")
 
 ## Installation
-pip install textClassifier
+git clone https://github.com/vikash06131721/autoMltext.git
+cd autoMltext/
+python setup.py install
 ## License
 MIT
 
