@@ -23,9 +23,10 @@ We also calculate tfidf based features.
 The option is there to select either of them("statistical", "tfidf") or concatenate all the features("all")
 
 ## Installation
-git clone https://github.com/vikash06131721/autoMltext.git
-cd autoMltext/
-python setup.py install
+1. git clone https://github.com/vikash06131721/autoMltext.git
+
+2. cd autoMltext/
+3. python setup.py install
 ## License
 MIT
 
