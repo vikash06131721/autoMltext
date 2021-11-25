@@ -120,7 +120,7 @@ class text_model():
                 print ("no valid scoring method")
                 break
             if score >best_acc:
-                best_acc = f1_score(y_test, y_pred)
+                best_acc = score
             
                 best_gs = gs
                 best_clf = idx
