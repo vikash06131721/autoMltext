@@ -4,7 +4,7 @@ setup(
   packages = ['textClassifier'],   # Chose the same as "name"
   version = '0.1.0',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'The package can convert literal text to numerals',   
+  description = 'The package if for automl text classifier currently for binary classification',   
   author = 'Vikash Kumar Prasad',                   # Type in your name
   author_email = 'ubuntukr7@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/vikash06131721/autoMltext',   # Provide either the link to your github or to your website
