@@ -46,11 +46,12 @@ warnings.filterwarnings("ignore")
 
 class text_model():
 
-    def __init__(self,data_path,scoring,features,cv):
+    def __init__(self,data_path,scoring,features,cv,model_save_path):
         self.data_path = data_path
         self.scoring =scoring
         self.features =features
         self.cv = cv
+        self.model_save_path = model_save_path
         
     def __select_scoring(self):
         scoring_fn_dicts ={"f1":"f1",
@@ -125,6 +126,7 @@ class text_model():
                 best_gs = gs
                 best_clf = idx
         print('\Classifier with best test set Acc score: %s' % grid_dict[best_clf])
+        joblib.dump(best_gs, self.model_save_path)
 
             
 

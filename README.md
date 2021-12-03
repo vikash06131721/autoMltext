@@ -4,7 +4,7 @@
 textClassifier is a package used to generate base result for text data for binary classification
 
 - from textClassifier.automltext import text_model
-- automl = text_model(data_path=data_path,scoring='f1',features='all',cv=5)
+- automl = text_model(data_path=data_path,scoring='f1',features='all',cv=5,model_save_path="model.joblib")
 - automl.build_model(text_column='text',target_column='airline_sentiment',test_size=0.20)
 
 Configurable arguments:
