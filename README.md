@@ -22,6 +22,39 @@ We also calculate tfidf based features.
 
 The option is there to select either of them("statistical", "tfidf") or concatenate all the features("all")
 
+# AutomlNumerical
+
+- from textClassifier.automlnumerical import numerical_model
+- num_model = numerical_model(numerical_columns=numerical_columns,
+                           categorical_columns=categorical_columns,
+                           index_column=index_column,
+                            target_column=target_column,
+                            data_path=" ",
+                            scoring = "f1",
+                            cv = 5
+                           )
+
+- num_model.build_model(test_size=0.25,model_save_path=" ")
+
+1. numerical_columns = list of columns
+
+2. categorical_columns = list of columns
+
+3. index_column = list of column(only one column can be index like customer id)
+
+4. target_column = list of column
+
+5. data_path = data path
+
+6. scoring = ["f1","acc","precision","recall","roc"]
+
+7. cv = [2,3,5,7,10]
+
+8. test_size = float point
+
+9. model_save_path = model path to save
+
+
 ## Installation
 1. git clone https://github.com/vikash06131721/autoMltext.git
 

@@ -7,3 +7,5 @@ from textClassifier.tfidf_features import tfidf_models
 from textClassifier.clean_data import Cleaner
 
 from textClassifier.all_features import FeatureMultiplierCount, all_features_models
+from textClassifier.automlnumerical import numerical_model
+from textClassifier.numericalfeats import models_numerical
